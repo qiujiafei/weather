@@ -1,8 +1,8 @@
 <h1 align="center"> weather </h1>
 
-基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气组件
+:rainbow: 基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气组件
 
-
+[![Build Status](https://travis-ci.com/qiujiafei123/weather.svg?branch=master)](https://travis-ci.com/qiujiafei123/weather)
 ## 安装
 
 ```shell
