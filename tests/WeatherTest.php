@@ -3,8 +3,9 @@
  * Created by PhpStorm.
  * User: pengdancui
  * Date: 2019/4/4
- * Time: 11:30 AM
+ * Time: 11:30 AM.
  */
+
 namespace Gaffey\Weather\Tests;
 
 use Gaffey\Weather\Exceptions\InvalidArgumentException;

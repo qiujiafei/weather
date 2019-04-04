@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: pengdancui
  * Date: 2019/4/3
- * Time: 9:51 PM
+ * Time: 9:51 PM.
  */
 
 namespace Gaffey\Weather;
@@ -15,8 +15,8 @@ use GuzzleHttp\Client;
 class Weather
 {
     protected $key;
-    protected $guzzleOptions = [];
 
+    protected $guzzleOptions = [];
 
     public function __construct($key)
     {
@@ -43,33 +43,33 @@ class Weather
         return $this->getWeather($city, 'all', $format);
     }
 
-    public function getWeather($city, $type = "base", $format = "json")
+    public function getWeather($city, $type = 'base', $format = 'json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
 
         if (!in_array(strtolower($format), ['xml', 'json'])) {
-            throw new InvalidArgumentException('Invalid response format: ' . $format);
+            throw new InvalidArgumentException('Invalid response format: '.$format);
         }
 
         if (!in_array(strtolower($type), ['base', 'all'])) {
-            throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
+            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
         $query = array_filter([
             'key' => $this->key,
             'city' => $city,
             'output' => $format,
-            'extensions' => $type
+            'extensions' => $type,
         ]);
+
         try {
             $response = $this->getHttpClient()->get($url, [
-                'query' => $query
+                'query' => $query,
             ])->getBody()->getContents();
 
-            return "json" === $format ? \json_decode($response, true) : $response;
+            return 'json' === $format ? \json_decode($response, true) : $response;
         } catch (\Exception $e) {
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
         }
     }
-
 }
