@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":181:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:2:{s:54:"Gaffey\Weather\Tests\WeatherTest::testSetGuzzleOptions";d:0.027;s:51:"Gaffey\Weather\Tests\WeatherTest::testGetHttpClient";d:0.013;}}}

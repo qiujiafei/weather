@@ -1,0 +1,28 @@
+{
+    "name": "gaffey\/weather",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "邱佳飞",
+            "email": "253896514@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gaffey\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gaffey\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
