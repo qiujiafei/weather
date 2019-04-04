@@ -3,6 +3,7 @@
 :rainbow: 基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气组件
 
 [![Build Status](https://travis-ci.com/qiujiafei123/weather.svg?branch=master)](https://travis-ci.com/qiujiafei123/weather)
+[![StyleCI](https://github.styleci.io/repos/179441542/shield?branch=master)](https://github.styleci.io/repos/179441542)
 ## 安装
 
 ```shell
