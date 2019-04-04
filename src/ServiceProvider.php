@@ -3,8 +3,9 @@
  * Created by PhpStorm.
  * User: pengdancui
  * Date: 2019/4/4
- * Time: 2:11 PM
+ * Time: 2:11 PM.
  */
+
 namespace Gaffey\Weather;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
